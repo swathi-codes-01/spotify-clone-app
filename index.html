@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Spotify</h2>
+      <ul>
+        <li>Home</li>
+        <li>Search</li>
+        <li>Your Library</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+      <div class="navbar">
+        <button>⬅</button>
+        <button>➡</button>
+      </div>
+
+      <h1>Good Evening</h1>
+      <h2>Recently Played</h2>
+
+      <!-- FIRST ROW -->
+      <div class="cards">
+
+        <div class="card" data-song="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" data-title="Daily Mix 1">
+          <img src="https://picsum.photos/200?random=4">
+          <p>Daily Mix 1</p>
+        </div>
+
+        <div class="card" data-song="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" data-title="Lo-Fi Beats">
+          <img src="https://picsum.photos/200?random=5">
+          <p>Lo-Fi Beats</p>
+        </div>
+
+        <div class="card" data-song="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" data-title="Party Songs">
+          <img src="https://picsum.photos/200?random=6">
+          <p>Party Songs</p>
+        </div>
+
+      </div>
+
+      <!-- SECOND ROW -->
+      <div class="cards">
+
+        <div class="card" data-song="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" data-title="Top Hits">
+          <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2">
+          <p>Top Hits</p>
+        </div>
+
+        <div class="card" data-song="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" data-title="Chill Vibes">
+          <img src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae">
+          <p>Chill Vibes</p>
+        </div>
+
+        <div class="card" data-song="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" data-title="Workout Mix">
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4">
+          <p>Workout Mix</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PLAYER -->
+  <div class="player">
+    <p id="nowPlaying">Now Playing: Top Hits 🎵</p>
+
+    <div class="controls">
+      <button id="prevBtn">⏮</button>
+      <button id="playBtn">▶</button>
+      <button id="nextBtn">⏭</button>
+    </div>
+
+    <div class="progress-container">
+      <span id="currentTime">0:00</span>
+      <input type="range" id="progressBar" value="0" min="0" max="100">
+      <span id="duration">0:00</span>
+    </div>
+    <div class="volume-container">
+  🔊
+  <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+   </div>
+  </div>
+
+  <audio id="audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
