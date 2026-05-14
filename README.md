@@ -15,3 +15,7 @@ A responsive Spotify music player clone built using HTML, CSS, and JavaScript.
 
 ## Author
 Swathi Patil
+
+## Preview
+
+![Spotify Clone Screenshot](assets/screenshot.png.png)
